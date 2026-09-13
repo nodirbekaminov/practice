@@ -15,4 +15,7 @@ In Python, there are bultin tools:
 '''
 
 
-# print(dir(__builtins__))
+print(dir(__builtins__))
+# Functions => type(), input(), bool(), int(), str()
+
+y = input("Give your value for y: ")
