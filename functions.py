@@ -47,3 +47,18 @@ print("result3:", result3)
 
 result4 = give_greet("John")
 print("result4:", result4)
+
+
+print("==== SCOPE ====")
+
+b = 100  # 3 => functionsdan tashqaridagi valueni oladi!
+
+# DEFINE
+
+
+def calculate(a):  # 2 => Parametr qismidan izlaydi
+    c = a * b  # 1 => Ickaridan izlaydi
+    print(f"The c value is {c}")
+
+
+calculate(5)
