@@ -5,7 +5,7 @@
 (4) SCOPE
 '''
 
-print("==== DEFINE & CALL ====")
+print("==== DEFINE(PARAMETER) & CALL(ARGUMENT) ====")
 # build in functions => print(), type()
 # Function => reusable block of code
 # Instead of block {} in JAVA, Python uses indentation
@@ -28,3 +28,22 @@ print("result1", result1)
 
 result2 = greeting("John")
 print("result2", result2)
+
+
+print("==== KEYWORD & DEFAULT ARGUMENTS ====")
+# DEFINE
+
+
+def give_greet(name, age=25):
+    print("Give greet is executed")
+    return f"Hi {name}, you are {age} years old!"
+
+# Call
+
+
+result3 = give_greet(name="Nick", age=26)
+print("result3:", result3)
+
+
+result4 = give_greet("John")
+print("result4:", result4)
